@@ -9,7 +9,6 @@ finish-args:
     - --share=ipc           # Needed for X11 support
     - --socket=wayland
     - --socket=fallback-x11
-    - --filesystem=xdg-run/app/com.discordapp.Discord:create
 command: /app/bin/randovania
 modules:
   - name: randovania
@@ -29,18 +28,13 @@ modules:
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://github.com/randovania/randovania/releases/download/v6.0.1/randovania-6.0.1-linux.tar.gz
-        sha256: 0ad268c581279b10a21492677f8cf24601c9ab36be0295070d1ea80b34741caa
+        url: https://github.com/randovania/randovania/releases/download/v6.1.0/randovania-6.1.0-linux.tar.gz
+        sha256: fdfdfc51f5c221d849fab8df5d78571aa4045017a85f4ebbda3c09e602ee1da9
       - type: file
         path: io.github.randovania.Randovania.metainfo.xml
       - type: script
         commands:
-          - |
-            for i in {0..9}; do
-              test -S $XDG_RUNTIME_DIR/discord-ipc-$i ||
-                ln -sf {app/com.discordapp.Discord,$XDG_RUNTIME_DIR}/discord-ipc-$i;
-            done
-            exec /app/share/randovania/randovania "$@"
+          - exec /app/share/randovania/randovania "$@"
         dest-filename: randovania-wrapper
 
   - name: mono6
