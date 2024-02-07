@@ -8,6 +8,7 @@
   <content_rating type="oars-1.0">
     <content_attribute id="social-chat">moderate</content_attribute>
   </content_rating>
+  <developer_name>Randovania Team</developer_name>
   <description>
     <p>
       Randovania is a program for randomizing multiple aspects of several games, making a fresh experience out of the familiar.
@@ -29,6 +30,7 @@
     <screenshot>https://randovania.github.io/flatpak/randovania4.png</screenshot>
   </screenshots>
   <releases>
+    <release version="7.3.0" date="2024-02-07"/>
     <release version="7.2.0" date="2024-01-05"/>
     <release version="7.1.1" date="2023-12-26"/>
     <release version="7.1.0" date="2023-12-05"/>
