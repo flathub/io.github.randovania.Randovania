@@ -18,16 +18,16 @@
     </p>
   </description>
   <launchable type="desktop-id">io.github.randovania.Randovania.desktop</launchable>
-  <url type="homepage">https://randovania.github.io/</url>
+  <url type="homepage">https://randovania.org/</url>
   <url type="donation">https://opencollective.com/randovania</url>
   <url type="bugtracker">https://github.com/randovania/randovania/issues</url>
   <url type="help">https://github.com/randovania/randovania#documentation</url>
   <url type="contribute">https://github.com/randovania/randovania/blob/main/CONTRIBUTING.md</url>
   <screenshots>
-    <screenshot type="default">https://randovania.github.io/flatpak/randovania1.png</screenshot>
-    <screenshot>https://randovania.github.io/flatpak/randovania2.png</screenshot>
-    <screenshot>https://randovania.github.io/flatpak/randovania3.png</screenshot>
-    <screenshot>https://randovania.github.io/flatpak/randovania4.png</screenshot>
+    <screenshot type="default"><image type="source">https://randovania.org/assets/flatpak/randovania1.png</image></screenshot>
+    <screenshot><image type="source">https://randovania.org/assets/flatpak/randovania2.png</image></screenshot>
+    <screenshot><image type="source">https://randovania.org/assets/flatpak/randovania3.png</image></screenshot>
+    <screenshot><image type="source">https://randovania.org/assets/flatpak/randovania4.png</image></screenshot>
   </screenshots>
   <releases>
     <release version="7.3.0" date="2024-02-07"/>
