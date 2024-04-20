@@ -11,7 +11,7 @@ finish-args:
     - --socket=fallback-x11
     # For Ryujinx/Dread exporting
     - --filesystem=~/.var/app/org.ryujinx.Ryujinx/config/Ryujinx    # Ryujinx flatpak
-    - --filesystem=xdg-config/Ryujinx
+    - --filesystem=xdg-config/Ryujinx                               # Ryujinx native
 command: /app/bin/randovania
 modules:
   - name: randovania
