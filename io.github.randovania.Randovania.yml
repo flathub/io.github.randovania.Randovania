@@ -9,6 +9,9 @@ finish-args:
     - --share=ipc           # Needed for X11 support
     - --socket=wayland
     - --socket=fallback-x11
+    # For Ryujinx/Dread exporting
+    - --filesystem=~/.var/app/org.ryujinx.Ryujinx/config/Ryujinx    # Ryujinx flatpak
+    - --filesystem=xdg-config/Ryujinx
 command: /app/bin/randovania
 modules:
   - name: randovania
