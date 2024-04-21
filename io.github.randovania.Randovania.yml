@@ -34,7 +34,7 @@ modules:
         url: https://github.com/randovania/randovania/releases/download/v7.5.0/randovania-7.5.0-linux.tar.gz
         sha256: fd38faa31781fae7fbe2200345f1c429adfe3a015306ae6775f5a81a5d7e9f95
         x-checker-data:
-          type: json-url
+          type: json
           url: https://api.github.com/repos/randovania/randovania/releases/latest
           tag-query: .tag_name
           version-query: $tag | .[1:]
