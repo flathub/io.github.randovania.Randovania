@@ -33,6 +33,13 @@ modules:
         archive-type: tar-gzip
         url: https://github.com/randovania/randovania/releases/download/v7.5.0/randovania-7.5.0-linux.tar.gz
         sha256: fd38faa31781fae7fbe2200345f1c429adfe3a015306ae6775f5a81a5d7e9f95
+        x-checker-data:
+          type: json-url
+          url: https://api.github.com/repos/randovania/randovania/releases/latest
+          tag-query: .tag_name
+          version-query: $tag | .[1:]
+          url-query: '"https://github.com/randovania/randovania/releases/download/" + $tag + "/randovania-" + $version + "-linux.tar.gz"'
+          
       - type: file
         path: io.github.randovania.Randovania.metainfo.xml
       - type: script
