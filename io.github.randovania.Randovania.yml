@@ -39,6 +39,7 @@ modules:
           tag-query: .tag_name
           version-query: $tag | .[1:]
           url-query: '"https://github.com/randovania/randovania/releases/download/" + $tag + "/randovania-" + $version + "-linux.tar.gz"'
+          is-main-source: true
           
       - type: file
         path: io.github.randovania.Randovania.metainfo.xml
