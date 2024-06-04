@@ -2,16 +2,16 @@ app-id: io.github.randovania.Randovania
 runtime: org.freedesktop.Platform
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
-sdk-extensions: [ org.freedesktop.Sdk.Extension.mono6 ]
+sdk-extensions: [org.freedesktop.Sdk.Extension.mono6]
 finish-args:
-    - --device=dri          # UI will want hw acceleration
-    - --share=network       # Multiworld support
-    - --share=ipc           # Needed for X11 support
-    - --socket=wayland
-    - --socket=fallback-x11
+  - --device=dri            # UI will want hw acceleration
+  - --share=network         # Multiworld support
+  - --share=ipc             # Needed for X11 support
+  - --socket=wayland
+  - --socket=fallback-x11
     # For Ryujinx/Dread exporting
-    - --filesystem=~/.var/app/org.ryujinx.Ryujinx/config/Ryujinx    # Ryujinx flatpak
-    - --filesystem=xdg-config/Ryujinx                               # Ryujinx native
+  - --filesystem=~/.var/app/org.ryujinx.Ryujinx/config/Ryujinx      # Ryujinx flatpak
+  - --filesystem=xdg-config/Ryujinx                                 # Ryujinx native
 command: /app/bin/randovania
 modules:
   - name: randovania
@@ -22,25 +22,29 @@ modules:
       - mkdir -p /app/share/applications
       - mkdir -p /app/share/icons/hicolor/256x256/apps/
       - rm /app/share/randovania/_internal/xdg_assets/README.md
-      - mv /app/share/randovania/_internal/xdg_assets/io.github.randovania.Randovania.png /app/share/icons/hicolor/256x256/apps/io.github.randovania.Randovania.png
-      - mv /app/share/randovania/_internal/xdg_assets/io.github.randovania.Randovania.desktop /app/share/applications/io.github.randovania.Randovania.desktop
-      - desktop-file-edit /app/share/applications/io.github.randovania.Randovania.desktop --set-key=Exec --set-value=/app/bin/randovania
+      - mv /app/share/randovania/_internal/xdg_assets/io.github.randovania.Randovania.png
+        /app/share/icons/hicolor/256x256/apps/io.github.randovania.Randovania.png
+      - mv /app/share/randovania/_internal/xdg_assets/io.github.randovania.Randovania.desktop
+        /app/share/applications/io.github.randovania.Randovania.desktop
+      - desktop-file-edit /app/share/applications/io.github.randovania.Randovania.desktop
+        --set-key=Exec --set-value=/app/bin/randovania
       - rmdir /app/share/randovania/_internal/xdg_assets
       - install -Dm 644 io.github.randovania.Randovania.metainfo.xml /app/share/appdata/io.github.randovania.Randovania.metainfo.xml
       - install -Dm 755 randovania-wrapper /app/bin/randovania
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://github.com/randovania/randovania/releases/download/v8.0.0/randovania-8.0.0-linux.tar.gz
-        sha256: 40116dba4bc53e5b959b52dca832eb69c93d7485e763829ebbcf317649e6e2b2
+        url: https://github.com/randovania/randovania/releases/download/v8.1.0/randovania-8.1.0-linux.tar.gz
+        sha256: 857c9bed477b1656cad1d60a07371e9542fe8e6137a3473b770331c3347baa8b
         x-checker-data:
           type: json
           url: https://api.github.com/repos/randovania/randovania/releases/latest
           tag-query: .tag_name
           version-query: $tag | .[1:]
-          url-query: '"https://github.com/randovania/randovania/releases/download/" + $tag + "/randovania-" + $version + "-linux.tar.gz"'
+          url-query: '"https://github.com/randovania/randovania/releases/download/"
+            + $tag + "/randovania-" + $version + "-linux.tar.gz"'
           is-main-source: true
-          
+
       - type: file
         path: io.github.randovania.Randovania.metainfo.xml
       - type: script
