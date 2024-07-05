@@ -34,8 +34,8 @@ modules:
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://github.com/randovania/randovania/releases/download/v8.2.0/randovania-8.2.0-linux.tar.gz
-        sha256: 84c75f8700d3b26618cbd61d5cc6453d3e033e185aa4691126978459bb7243ff
+        url: https://github.com/randovania/randovania/releases/download/v8.2.1/randovania-8.2.1-linux.tar.gz
+        sha256: d7c4586f35eb44c3ba081bea90da9b2d075b28e7a47bc59b49a9d4aad39e44c2
         x-checker-data:
           type: json
           url: https://api.github.com/repos/randovania/randovania/releases/latest
