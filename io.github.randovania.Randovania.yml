@@ -12,7 +12,7 @@ finish-args:
     # For Ryujinx/Dread exporting
   - --filesystem=~/.var/app/org.ryujinx.Ryujinx/config/Ryujinx      # Ryujinx flatpak
   - --filesystem=xdg-config/Ryujinx                                 # Ryujinx native
-command: /app/bin/randovania
+command: randovania
 modules:
   - name: randovania
     buildsystem: simple
@@ -27,15 +27,15 @@ modules:
       - mv /app/share/randovania/_internal/xdg_assets/io.github.randovania.Randovania.desktop
         /app/share/applications/io.github.randovania.Randovania.desktop
       - desktop-file-edit /app/share/applications/io.github.randovania.Randovania.desktop
-        --set-key=Exec --set-value=/app/bin/randovania
+        --set-key=Exec --set-value=$FLATPAK_DEST/bin/randovania
       - rmdir /app/share/randovania/_internal/xdg_assets
       - install -Dm 644 io.github.randovania.Randovania.metainfo.xml /app/share/appdata/io.github.randovania.Randovania.metainfo.xml
-      - install -Dm 755 randovania-wrapper /app/bin/randovania
+      - install -Dm 755 randovania-wrapper $FLATPAK_DEST/bin/randovania
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://github.com/randovania/randovania/releases/download/v8.3.0/randovania-8.3.0-linux.tar.gz
-        sha256: f080c9663e7753e5d8900874d43806049f1531668684abba1bce455b7553a6e6
+        url: https://github.com/randovania/randovania/releases/download/v8.4.0/randovania-8.4.0-linux.tar.gz
+        sha256: 90598cd81b3894ef90122045481e407d5c15e19dbf5574a93542a9f31bb8207f
         x-checker-data:
           type: json
           url: https://api.github.com/repos/randovania/randovania/releases/latest
