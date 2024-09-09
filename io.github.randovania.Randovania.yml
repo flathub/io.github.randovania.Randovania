@@ -12,7 +12,7 @@ finish-args:
     # For Ryujinx/Dread exporting
   - --filesystem=~/.var/app/org.ryujinx.Ryujinx/config/Ryujinx      # Ryujinx flatpak
   - --filesystem=xdg-config/Ryujinx                                 # Ryujinx native
-command: /app/bin/randovania
+command: randovania
 modules:
   - name: randovania
     buildsystem: simple
@@ -27,10 +27,10 @@ modules:
       - mv /app/share/randovania/_internal/xdg_assets/io.github.randovania.Randovania.desktop
         /app/share/applications/io.github.randovania.Randovania.desktop
       - desktop-file-edit /app/share/applications/io.github.randovania.Randovania.desktop
-        --set-key=Exec --set-value=/app/bin/randovania
+        --set-key=Exec --set-value=$FLATPAK_DEST/randovania
       - rmdir /app/share/randovania/_internal/xdg_assets
       - install -Dm 644 io.github.randovania.Randovania.metainfo.xml /app/share/appdata/io.github.randovania.Randovania.metainfo.xml
-      - install -Dm 755 randovania-wrapper /app/bin/randovania
+      - install -Dm 755 randovania-wrapper $FLATPAK_DEST/randovania
     sources:
       - type: archive
         archive-type: tar-gzip
