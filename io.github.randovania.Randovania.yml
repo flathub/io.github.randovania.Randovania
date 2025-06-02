@@ -34,8 +34,8 @@ modules:
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://github.com/randovania/randovania/releases/download/v9.1.1/randovania-9.1.1-linux.tar.gz
-        sha256: 3beb31d6f130bb6559554b2fd52ff21504e01a6740d9623287cab5194db34860
+        url: https://github.com/randovania/randovania/releases/download/v9.2.0/randovania-9.2.0-linux.tar.gz
+        sha256: a8b48056d57468c4ce0447004bb6c277e3caeb0b5cfb23d388516adf2c401339
         x-checker-data:
           type: json
           url: https://api.github.com/repos/randovania/randovania/releases/latest
