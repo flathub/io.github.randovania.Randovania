@@ -30,8 +30,11 @@
     <screenshot><image type="source">https://randovania.org/assets/flatpak/randovania4.png</image></screenshot>
   </screenshots>
   <releases>
-    <release version="9.2.0" date="2025-06-02">
+    <release version="9.3.0" date="2025-07-02">
       <description></description>
+    </release>
+    <release version="9.2.0" date="2025-06-02">
+      <description/>
     </release>
     <release version="9.1.1" date="2025-05-06">
       <description/>
