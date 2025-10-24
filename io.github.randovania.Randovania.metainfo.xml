@@ -24,10 +24,22 @@
   <url type="help">https://github.com/randovania/randovania#documentation</url>
   <url type="contribute">https://github.com/randovania/randovania/blob/main/CONTRIBUTING.md</url>
   <screenshots>
-    <screenshot type="default"><image type="source">https://randovania.org/assets/flatpak/randovania1.png</image></screenshot>
-    <screenshot><image type="source">https://randovania.org/assets/flatpak/randovania2.png</image></screenshot>
-    <screenshot><image type="source">https://randovania.org/assets/flatpak/randovania3.png</image></screenshot>
-    <screenshot><image type="source">https://randovania.org/assets/flatpak/randovania4.png</image></screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/io.github.randovania.Randovania/9e3afe1bb982115601b8b72dad52d60135f47328/screenshots/main-page.png</image>
+      <caption>The games tab, listing all supported games</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.github.randovania.Randovania/9e3afe1bb982115601b8b72dad52d60135f47328/screenshots/game-intro.png</image>
+      <caption>The intro tab for Metroid Fusion</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.github.randovania.Randovania/9e3afe1bb982115601b8b72dad52d60135f47328/screenshots/game-presets.png</image>
+      <caption>The presets tab for Metroid Fusion</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.github.randovania.Randovania/9e3afe1bb982115601b8b72dad52d60135f47328/screenshots/game-details.png</image>
+      <caption>The Game Details window, showing a generated Metroid Fusion game</caption>
+    </screenshot>
   </screenshots>
   <releases>
     <release version="10.2.0" date="2025-10-02">
