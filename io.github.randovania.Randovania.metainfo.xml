@@ -21,8 +21,9 @@
   <url type="homepage">https://randovania.org/</url>
   <url type="donation">https://opencollective.com/randovania</url>
   <url type="bugtracker">https://github.com/randovania/randovania/issues</url>
-  <url type="help">https://github.com/randovania/randovania#documentation</url>
+  <url type="help">https://randovania.org/guides/</url>
   <url type="contribute">https://github.com/randovania/randovania/blob/main/CONTRIBUTING.md</url>
+  <url type="vcs-browser">https://github.com/randovania/randovania</url>
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/flathub/io.github.randovania.Randovania/9e3afe1bb982115601b8b72dad52d60135f47328/screenshots/main-page.png</image>
