@@ -24,16 +24,16 @@ modules:
       - rm /app/share/randovania/_internal/xdg_assets/README.md
       - mv /app/share/randovania/_internal/xdg_assets/${FLATPAK_ID}.png -t /app/share/icons/hicolor/256x256/apps/
       - mv /app/share/randovania/_internal/xdg_assets/${FLATPAK_ID}.desktop -t /app/share/applications/
-      - desktop-file-edit /app/share/applications/${FLATPAK_ID}.desktop
-        --set-key=Exec --set-value=$FLATPAK_DEST/bin/randovania
+      - desktop-file-edit /app/share/applications/${FLATPAK_ID}.desktop --set-key=Exec
+        --set-value=$FLATPAK_DEST/bin/randovania
       - rmdir /app/share/randovania/_internal/xdg_assets
       - install -Dm 644 ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
       - install -Dm 755 randovania-wrapper $FLATPAK_DEST/bin/randovania
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://github.com/randovania/randovania/releases/download/v10.8.0/randovania-10.8.0-linux.tar.gz
-        sha256: 997523ca268aa861acc99362f7a457d5b5d6bc20d96fadd338e7e9b06d454f5d
+        url: https://github.com/randovania/randovania/releases/download/v10.8.1/randovania-10.8.1-linux.tar.gz
+        sha256: dfc7deed68b71446d4c76e5cde1f4b2c0d6264a34c8ba150351d36df7a2c5800
         x-checker-data:
           type: json
           url: https://api.github.com/repos/randovania/randovania/releases/latest
