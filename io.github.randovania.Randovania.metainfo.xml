@@ -5,8 +5,9 @@
   <summary>A randomizer platform for a multitude of games</summary>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
   <project_license>GPL-3.0-only</project_license>
-  <content_rating type="oars-1.0">
-    <content_attribute id="social-chat">moderate</content_attribute>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">mild</content_attribute>
+    <content_attribute id="social-info">moderate</content_attribute>
   </content_rating>
   <developer_name>Randovania Team</developer_name>
   <description>
