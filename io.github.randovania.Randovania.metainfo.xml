@@ -25,6 +25,16 @@
   <url type="help">https://randovania.org/guides/</url>
   <url type="contribute">https://github.com/randovania/randovania/blob/main/CONTRIBUTING.md</url>
   <url type="vcs-browser">https://github.com/randovania/randovania</url>
+  <requires>
+    <display_length compare="ge">768</display_length>
+  </requires>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+  <supports>
+    <internet>offline-only</internet>
+  </supports>
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/flathub/io.github.randovania.Randovania/9e3afe1bb982115601b8b72dad52d60135f47328/screenshots/main-page.png</image>
